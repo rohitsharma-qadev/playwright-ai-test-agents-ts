@@ -14,7 +14,7 @@ test.describe('Core E-commerce User Operations', () => {
     // 2. Submit the login form with both fields empty.
     await loginPage.submitEmpty();
     await expect(page.getByText('Epic sadface: Username is required')).toBeVisible();
-    await expect(page).toHaveURL('https://www.saucedemo.com/');
+    await expect(page).toHaveURL('https://www.saucedemoo.com/');
 
     // 3. Try the locked-out account.
     await loginPage.login('locked_out_user', 'secret_sauce');
